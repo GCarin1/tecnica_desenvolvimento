@@ -20,24 +20,32 @@ class init:
     def algo(self):
 
         a=float(input("Digite o valor de A\n:"))
-        b=float(input("Digite o valor de B\n:"))
-        c=float(input("Digite o valor de C\n:"))
-        
-        if(a<=0):
+        while(a<=0):
             print("valor de A é invalido")
-            time.sleep(1)
-        elif(b<=0):
+            a=float(input("Digite o valor de A\n:"))
+            
+
+        b=float(input("Digite o valor de B\n:"))
+        while(b<=0):
             print("valor de B é invalido")
-            time.sleep(1)
-        elif(c<=0):
+            b=float(input("Digite o valor de B\n:"))
+            
+            
+        c=float(input("Digite o valor de C\n:"))
+        while(c<=0):
             print("valor de B é invalido")
-            time.sleep(1)
+            c=float(input("Digite o valor de C\n:"))
+            
         else:
             r=float((a+b)**2)
             s=float((b+c)**2)
             d=float((r+s)/2)
-            print(d)
+            print(f'O valor de D é :{d}')
 
 
 start=init()
 start.step()
+
+
+#Projeto integrado 
+#Duas opções do projeto  
