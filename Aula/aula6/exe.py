@@ -17,10 +17,9 @@ class init:
 
         d1=(x2*x2-x1*x1)+(y2*y2-y1*y1)
         d2=math.sqrt(d1)
-
+        
         print(f'Distancia entre os dois pontos em m\n:{d2}')
-  
-    
-
+         
+         
 start=init()
 start.step()
