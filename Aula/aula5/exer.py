@@ -4,6 +4,7 @@ import time
 class init:
     def step(self):
         while True:
+
             print("Escolha qual calculo voce quer fazer")
             r=input("1-soma 2-subtracao 3-divisao 4-multiplicação\n:")
             r=int(r)
@@ -12,6 +13,7 @@ class init:
             if(r==2):self.subtracao()
             if(r==3):self.divisao()
             if(r==4):self.multiplicacao()
+            if(r<=0 or r>4):self.error()
 
             continua = str(input('Deseja continuar a calcular ? \ny-Sim n-Não\n:'))
             if(continua=='y'):
@@ -59,7 +61,9 @@ class init:
         b=int(b)
         mult=a*b
         print(f'Multiplicação de a com b é\n:{mult}')
-    
+
+    def error(self):
+        print("Opção invalido....")
     
 
 start=init()
